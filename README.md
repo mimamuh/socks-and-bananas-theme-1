@@ -33,7 +33,7 @@ We've documented this starter theme pretty heavily so that it should be possible
 
 🚢&nbsp;Ghost's [GH Deploy Action](.github/workflows/deploy-theme.yml) included by default. [Learn more how to deploy your theme automatically](https://github.com/TryGhost/action-deploy-theme)
 
-➕&nbsp;Extensible by design. Rollup's configuration structure makes it easy to add [any number of plugins easily](https://github.com/rollup/plugins). 
+➕&nbsp;Extensible by design. Rollup's configuration structure makes it easy to add [any number of plugins easily](https://github.com/rollup/plugins).
 
 &nbsp;
 
@@ -58,13 +58,13 @@ One neat trick is that you can also create custom one-off templates just by addi
 
 ## Development guide
 
-The Starter theme provides a first-class development experience out of the box. 
+The Starter theme provides a first-class development experience out of the box.
 
 &nbsp;
 
 ### Setup
 
-To see realtime changes during development, symlink the Starter theme folder to the `content/themes` folder in your local Ghost install. 
+To see realtime changes during development, symlink the Starter theme folder to the `content/themes` folder in your local Ghost install.
 
 ```bash
 ln -s /path/to/starter /ghost/content/themes/starter
@@ -75,7 +75,7 @@ Restart Ghost and select the Starter theme from **Settings**.
 From the theme's root directory, install the dependencies:
 
 ```bash
-npm install
+pnpm install
 ```
 
 If Node isn't installed, follow the [official Node installation guide](https://nodejs.org/).
@@ -87,7 +87,7 @@ If Node isn't installed, follow the [official Node installation guide](https://n
 From the Starter theme folder, start development mode:
 
 ```bash
-npm run dev
+pnpm run dev
 ```
 
 Changes you make to your styles, scripts, and Handlebars files will show up automatically in the browser. CSS and Javascript will be compiled and output to the `built` folder.
@@ -101,24 +101,22 @@ Press `ctrl + c` in the terminal to exit development mode.
 Compile your CSS and JavaScript assets for production with the following command:
 
 ```bash
-npm run build
+pnpm run build
 ```
 
 Create a zip archive:
 
 ```bash
-npm run zip
+pnpm run zip
 ```
 
 Use `gscan` to test your theme for compatibility with Ghost:
 
 ```bash
-npm run test
+pnpm run test
 ```
 
 &nbsp;
-
-
 
 ## Copyright & License
 

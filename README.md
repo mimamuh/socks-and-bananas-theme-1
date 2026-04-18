@@ -118,6 +118,20 @@ pnpm run test
 
 &nbsp;
 
+### Deploy theme (GitHub Actions)
+
+Pushing the `deploy` branch runs [.github/workflows/deploy-theme.yml](.github/workflows/deploy-theme.yml), which uploads the theme to your Ghost site using [TryGhost/action-deploy-theme](https://github.com/TryGhost/action-deploy-theme). Configure the `GHOST_ADMIN_API_URL` and `GHOST_ADMIN_API_KEY` repository secrets as described in that action’s documentation.
+
+From any local branch, you can merge **remote `main`** into `deploy`, push, and return to the branch you were on:
+
+```bash
+pnpm deploy
+```
+
+This runs [`scripts/deploy.sh`](scripts/deploy.sh): it requires a **clean** working tree, runs `git fetch`, checks out `deploy`, merges `origin/main` with `--no-edit`, pushes `origin deploy`, then checks out your previous branch (or detached commit).
+
+&nbsp;
+
 ## Copyright & License
 
 Copyright (c) 2013-2026 Ghost Foundation - Released under the [MIT license](LICENSE).

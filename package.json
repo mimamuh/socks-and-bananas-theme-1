@@ -12,6 +12,7 @@
         "desktop": "assets/screenshot-desktop.jpg"
     },
     "scripts": {
+        "deploy": "sh scripts/deploy.sh",
         "dev": "rollup -c --environment BUILD:development -w",
         "build": "rollup -c --environment BUILD:production",
         "zip": "npm run build && bestzip $npm_package_name.zip assets/* partials/* members/* *.hbs package.json",

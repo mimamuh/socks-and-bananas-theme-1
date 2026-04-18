@@ -1,7 +1,7 @@
 {
-    "name": "ghost-starter-theme",
-    "description": "A starter theme for Ghost theme development",
-    "demo": "https://starter.ghost.io",
+    "name": "socks-and-bananas-theme-1",
+    "description": "A theme for socksandbananas.com blog",
+    "demo": "https://socksandbananas.com",
     "version": "1.0.0",
     "engines": {
         "ghost": ">=5.0.0"
@@ -19,15 +19,15 @@
         "pretest": "npm run build"
     },
     "author": {
-        "name": "Ghost Foundation",
-        "email": "hello@ghost.org",
-        "url": "https://ghost.org"
+        "name": "Socks and Bananas",
+        "email": "hello@socksandbananas.com",
+        "url": "https://socksandbananas.com"
     },
     "gpm": {
         "type": "theme",
         "categories": [
             "Minimal",
-            "Magazine"
+            "Blog"
         ]
     },
     "keywords": [
